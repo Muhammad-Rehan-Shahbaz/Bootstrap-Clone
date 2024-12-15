@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+</head>
+<!-- for CSS-->
+<style>
+    *{margin: 0px;
+    padding: 0px;
+color: white;}
+.nav{
+    background-color: rgb(111, 0, 255);
+    /* border: 2px solid yellow; */
+    height: 65px;
+}
+.nav ul{
+    display:flex;
+    /* border: 2px solid yellow; */
+    margin: 0px 2px;
+    width: 500px;
+    position: absolute;
+    left: 250px;
+}
+.nav ul li{
+    margin: 18px 5px;
+    padding: 5px;
+    font-size: large;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.89);
+    /* border: 2px solid red; */
+}
+.search{
+    width: 300px;
+    margin: 0px 0px;
+    padding: 10px 10px;
+    position: absolute;
+    right: 800px;
+    top: 2px;
+    
+    
+    
+}
+.search input{
+    border: 1px solid rgba(255, 255, 255, 0.74);
+    background-color:rgb(92, 0, 212);
+    border-radius: 7px;
+ height: 40px;
+ width: 100%; 
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.781);
+    font-size: medium
+}
+.social ul{
+    /* border: 2px solid red; */
+    margin: 0px 1100px;
+    width: 350px;
+    top: 15px;
+}
+.social ul li{
+   
+    
+    /* border: 2px solid yellow; */
+    margin: 2px;
+}
+#logo1{
+   
+    
+    margin: 13px 0px;
+}
+body{
+    background-color: rgb(48, 48, 48)
+}
+.nav ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+.search input:hover{
+  border: 4px solid burlywood;
+    cursor: pointer;
+ 
+ 
+}
+/* For inside content after navigation */
+.container .upper{
+    display: flex;
+    position: relative;
+margin: 20px 500px;
+padding: 2px 2px;
+top: 20px;
+align-items: center;
+justify-content: center;
+}
+.upper #b1{
+    font-size: x-large;
+    display: flex;
+  /* border: 2px solid red; */
+  background-color: #ffe484;
+  width: 120px;
+  border-radius: 6px;
+  margin: 0px 12px;
+  padding: 2px;
+color: black;
+}
+p{
+    color: rgb(184, 184, 184);
+}
+.container .mainlogo{
+position: absolute;
+    top: 200px;
+    left: 900px;
+
+}
+h1{
+font-size: 70px;
+}
+
+#centertext{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 250px;
+    left: 600px;
+}
+#centerpara{
+    margin: 2px 2px;
+    padding: 2px 2px;
+    /* border: 2px solid red; */
+    position: relative;
+    top:300px;
+    width: 1050px;
+    left: 500px;
+    font-size:xx-large;
+    justify-content: center;
+    align-items: center;
+}
+.bottom{
+    display: flex;
+    position: relative;
+margin: 20px 500px;
+padding: 2px 2px;
+top: 350px;
+align-items: center;
+justify-content: center;
+}
+.bottom li{
+    font-size: x-large;
+    display: flex;
+  /* border: 2px solid red; */
+  background-color: #4b4b4b;
+  width: 300px;
+  height: 50px;
+  border-radius: 6px;
+  margin: 0px 12px;
+  padding: 2px;
+color: black;
+}
+#docread{
+    color: white;
+    background-color: rgb(111, 0, 255);;
+}
+</style>
+<body>
+    <nav class="nav">
+<ul>
+    <li id="logo1"><img src="bootstrap-5-logo-icon.webp" alt="bootstrap logo" width="50px" height="30px"> </li>
+    <li>Docs</li>
+    <li>Examples</li>
+    <li>Themes</li>
+    <li>Blog</li>
+</ul>
+<div class="search">
+    <form action="form">
+        <input type="search" placeholder=" Search" >
+    </form>
+</div>
+<div class="social">
+    <ul>
+        <li><img src="github.png" alt="githublogo" width="20px"></li>
+        <li><img src="t2.png" alt="" width="20px"></li>
+        <li><img src="oc2.png" alt="" width="20px"></li>
+        <li>|</li>
+        <li>v5.3 ▼</li>
+        <li>|</li>
+        <li><img src="night-mode-1.png" alt=""width="20px"></li>
+
+    </ul>
+</div>
+    </nav>
+    <div class="container">
+        <div class="upper">
+        <h1 id="b1">New in v5.3</h1>
+        <p>Color mode support,expanded color palette,and more!</p>
+    </div>
+    <div class="mainlogo">
+        <img src="bootstrap-5-logo-icon.webp" alt="" width="200px">
+    </div>
+ <div class="mainheadings">
+    <h1 id="centertext"> Build fast, responsive sites <br> &nbsp &nbsp &nbsp &nbsp &nbsp with Bootstrap</h1>
+    <p id="centerpara">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
+ </div>
+
+</div>
+<div class="bottom">
+    <li id="code">$ npm i bootstrap@5.3.2</li>
+    <li id="docread">Read the Docs</li>
+</div>
+</body>
+</html>
